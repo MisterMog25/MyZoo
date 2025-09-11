@@ -1,6 +1,7 @@
 
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import *
 
 def index(request):
     return render(request, "main/index.html")
@@ -13,3 +14,8 @@ def show_prices(request):
 
 def show_about(request):
     return render(request, "main/about.html")
+
+def show_animals(request):
+    all_animals = Animal.objects.all()
+    count_of_animals=len(all_animals)
+    return render(request, "main/animals.html", {'animals': all_animals, "count": count_of_animals})
