@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacts</title>
-</head>
-<body>
-<h1>contacts</h1>
-<p>+49930294938</p>
-<div>
-  <button>Call us!</button>
-</div>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Контакти{% endblock %}
+
+{% block content %}
+<h1>Зв'яжіться з нами</h1>
+<p><strong>Адреса:</strong> м. Київ, вул. Природна, 15</p>
+<p><strong>Телефон:</strong> +380 (67) 123 45 67</p>
+<p><strong>Email:</strong> info@myzoo.com</p>
+
+<h2>Графік роботи</h2>
+<p>Пн–Нд: 9:00 – 19:00</p>
+
+<h2>Мапа</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18..."
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+{% endblock %}

@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello world</title>
-</head>
-<body>
-<h2>Prices</h2>
-<p>Basic ticket: 100$</p>
-<p>Premium ticket: 200$</p>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Ціни{% endblock %}
+
+{% block content %}
+<h1>Вартість квитків</h1>
+<table border="1" cellpadding="10" style="border-collapse: collapse; margin-top: 10px;">
+    <tr>
+        <th>Категорія</th>
+        <th>Ціна</th>
+    </tr>
+    <tr>
+        <td>Дорослий</td>
+        <td>150 грн</td>
+    </tr>
+    <tr>
+        <td>Дитячий (6–14 років)</td>
+        <td>80 грн</td>
+    </tr>
+    <tr>
+        <td>Діти до 6 років</td>
+        <td>Безкоштовно</td>
+    </tr>
+    <tr>
+        <td>Студенти та пенсіонери</td>
+        <td>100 грн</td>
+    </tr>
+</table>
+{% endblock %}
