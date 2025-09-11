@@ -7,7 +7,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <img src="{% static 'main/img/img.png' %}" alt="Zoo" style="max-width:200px;">
+    <a href="{% url 'main_page' %}"><img src="{% static 'main/img/img.png' %}" alt="Zoo" style="max-width:200px;"></a>
     <a href="{% url 'contacts' %}" style="margin-right: 20px;">Contacts</a>
     <a href="{% url 'prices' %}" style="margin-right: 20px;">Price</a>
     <a href="{% url 'about' %}" style="margin-right: 20px;">About Us</a>
