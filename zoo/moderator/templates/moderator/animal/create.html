@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Додавання тварини</title>
-
-</head>
-<body>
+{% extends "layout.html" %}
+{% block title %}Animals kering{% endblock %}
+{% block content %}
     <form method="post">
       {% csrf_token %}
       {{ form.id }}
@@ -16,5 +11,4 @@
 
       <button type="submit">Додати</button>
     </form>
-</body>
-</html>
+{% endblock %}
